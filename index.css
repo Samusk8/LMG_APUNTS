@@ -8,4 +8,18 @@ h1 {
 .tema {
     background-color: white;
     
+    
+}
+.contenidos {
+    display: flex;
+    width: 75%;
+    margin: auto;
+}
+.izquierda {
+text-align: left;
+width: 25%;
+}
+.derecha {
+    text-align:left;
+    width: 25%;
 }
