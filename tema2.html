@@ -40,6 +40,31 @@
                 <li>&lt;figure> i &lt;figcaption>: Agrupa elements multimèdia (com imatges o vídeos) i les seves
                     descripcions.</li>
             </ol>
+
+            <div class="warning">
+                <h3>Atención</h3>
+                <p>
+                    <h4>Bones Pràctiques: </h4>
+                    <ul>
+                       <li> Utilitza elements semàntics per organitzar millor la
+                        pàgina. Això fa que sigui més comprensible per als
+                        navegadors, cercadors i lectors de pantalla.</li>
+        
+                        <li>Evita l'ús excessiu de divs ("divitis") i aprofita les
+                            etiquetes com &lt;section>, &lt;article>, i &lt;aside> per fer
+                            que la pàgina sigui més semàntica.
+                        </li>      
+                        <li>Proporciona enllaços de navegació clars dins dels
+                            elements &lt;header> i &lt;footer> per millorar
+                            l’experiència d’usuari i l’accessibilitat.
+                        </li>       
+                        <li>No abusis de &lt;aside>, ja que aquest element ha de
+                                contenir informació complementària i no essencial per
+                                al contingut principal.
+                        </li>           
+                    </ul>
+                </p><br>
+            </div>
         </div>
 
 
@@ -49,6 +74,73 @@
         </div>
     </div>
 
+    <h3>Formularios Con HTML</h3>
+
+    <div class="contenido">
+        <div class="izq">
+            Els formularis són una de les eines més importants d'HTML perquè permeten als usuaris enviar dades a un servidor.
+            Amb HTML5, els formularis han guanyat noves funcionalitats que milloren la seva usabilitat i validació.
+            Un formulari es crea amb l'etiqueta <form>, que actua com el contenidor de tots els elements d'entrada (text, botons,
+            seleccions, etc.).
+            Cada camp del formulari s’envia com a dades a un servidor quan l'usuari l’envia.
+        </div>
+
+        
+
+        <div class="der">
+            <p> &lt;form action="submit.php" method="POST"> </p>
+                 <p>&nbsp;&lt;!-- Aquí van els camps del formulari --></p>
+            <p>   &lt;/form>
+            </p>
+        </div>
+    </div>
+
+    <div class="contenido">
+        <div class="izq">
+            <h3>Etiquetas</h3>
+            <p>
+                L'etiqueta &lt;input> és l'element més versàtil per crear camps d'entrada. 
+                El tipus de camp es defineix amb l'atribut type.
+            </p>
+            <p>
+                L'etiqueta &lt;label> s'utilitza per a etiquetar camps de formulari i millorar 
+                l'accessibilitat.
+            </p>
+            <p>
+                Per a textos llargs, com comentaris o descripcions, s'utilitza &lt;textarea>, que permet una àrea de text més gran.
+            </p>
+            <p>
+                &lt;select> es fa servir per crear llistes desplegables de selecció. Cada opció dins de la llista es defineix amb &lt;option>.
+            </p>
+            <p>
+                Atribut multiple per les llistes desplegables de selecció. Permet seleccionar múltiples opcions en una llista de
+                selecció.
+            </p>
+            <p>
+                <b>Buttom submit</b> S'utilitza per crear botons d'enviament o d’altres accions dins del formulari.
+            </p>
+            <p>
+                Radio buttons permeten seleccionar una opció d'un conjunt de possibilitats.
+            </p>
+            <p>
+                Els checkboxes permeten seleccionar diverses opcions independents.
+            </p>
+        </div>
+
+        
+
+        <div class="der">
+            <p>&lt;input type="text" name="nom" placeholder="Escriu el teu nom"></p>
+            <p>&lt;input type="email" name="email" placeholder="Escriu el teu correu electrònic"></p>
+            <p>&lt;input type="password" name="password" placeholder="Escriu la teva contrasenya"></p>
+            <p>&lt;label for="nom">Nom:</label></p>
+            <p>&lt;input type="text" id="nom" name="nom"></p>
+            <p>&lt;textarea name="comentari" rows="4" cols="50" placeholder="Escriu el teu comentari aquí"></textarea></p>
+            
+
+
+        </div>
+    </div>
 
 
 
