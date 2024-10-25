@@ -34,27 +34,11 @@ a {
     color: white;
 }
 
-
-@media screen and (max-width: 700px) {
+/* Añadir media queris posteriormente, de momento no me sale responsive */
+/* @media screen and (max-width: 700px) {
     body {
         flex-direction: column;
         background-color: whitesmoke;
         height: auto;
     }
-
-    h1 {
-        text-align: center;
-    }
-
-    .temario {
-     color: white;
-        
-    }
-
-    .tema {
-        height: auto;
-        width: 100%;
-        background-color: white;
-
-    }
-}
+} */
