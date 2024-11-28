@@ -1,10 +1,34 @@
-body {
-
-    background-color: whitesmoke;
-    margin: 10%;
+:root {
+    --color-primario: rgb(238, 147, 111);
 }
 
-h1 {
+body {
+    margin: 0%;
+    background-color: whitesmoke;
+}
+
+header{
+    width: 100%;
+    background-color: var(--color-primario);
+    display: flex;
+    justify-content: space-between;
+} 
+
+.icono {
+    width: 5%;
+    margin:1%;
+    
+}
+.buscador {
+    width: 20%;
+    margin: 3%;
+}
+
+main {
+    margin: 3% 10%;
+}
+
+h2, h1 {
     text-align: center;
 }
 
@@ -12,33 +36,44 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(80px, auto);
-    grid-gap: 15px;
+    grid-gap: 30px;
+    
 }
-
 .tema {
     background-color: white;
+    border-radius: 50px;
+}
+.tema > h3, ol{
+    margin-left: 50px;
+
 
 }
 
 .boton {
     text-align: center;
     padding: 20px;
-    background-color: blue;
+    background-color:var(--color-primario);
     width: 20%;
     margin: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
     
+}
+
+.boton:hover {
+    background-color: rgba(77, 14, 3, 0.829) ;
 
 }
 
 a {
     color: white;
+    text-decoration: none;
 }
 
 /* Añadir media queris posteriormente, de momento no me sale responsive */
-/* @media screen and (max-width: 700px) {
-    body {
-        flex-direction: column;
-        background-color: whitesmoke;
-        height: auto;
+ @media screen and (max-width: 940px) {
+    .temario {
+        grid-template-columns:  2fr;
     }
-} */
+} 
