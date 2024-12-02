@@ -14,235 +14,105 @@
     <link rel="stylesheet" href="tema.css">
 
 </head>
-<header>
-    <form action=""> 
-        <input type="search" placeholder="Buscar...">
-        <button type="submit">
-            <img src="searchmagnifierinterfacesymbol1_79893.svg" alt="Buscar" width="10px">
-        </button>
-    </form>
-</header>
+
 <body>
-    <h1>Tema 1</h1>
-    <h2>HTML Básico</h2>
-        <!-- indice -->
-         <h3>Índice:</h3>
-        <ol>
-            <a href="#intro"><li> Introducción a HTML </li></a>
-            <a href="#estructura"><li>Estructura Basica </li></a>
-            <a href="#etiquetas"><li>Etiquetas basicas </li></a>
-            <a href="#anidamiento"><li>Elementos html y anidamiento </li></a>
-            <a href="#atributos"><li>Atributos </li></a>
-            <a href="#formatado"><li>Texto formatado </li></a>
-            <a href="#comentarios"><li>Comentarios </li></a>
-            <a href="#imagenes"><li>Imagenes </li></a>
-            <a href="#enlaces"><li>Enlaces </li></a>
-            <a href="#listas"><li>Listas </li></a>
-            <a href="#tablas"><li>Tablas </li></a>
-        </ol>
-    <h3 id="intro">¿Qué es HTML?</h3>
-    <p>
-        <strong>Html</strong> (HyperText Markup Language) es el lenguaje de marcas
-        para crear páginas web. Define la estructura de la página con etiquetas
-        que el navegador interpreta para mostrar contenido.
-    </p>
-    <h3>Breve Historia</h3>
-    <p>
-        Creat per Tim Berners-Lee el 1991. <br>
-        HTML 2.0 (1995): Primer estàndard oficial. <br>
-        HTML5 (2014): Última versió amb noves
-        funcionalitats com suport per a vídeo, àudio i gràfics.
-    </p>
-
-    <h3 id="estructura">Estructura básica de un documento HTML</h3>
-    <div class="contenido">
-        <div class="izq">
-            <p>
-                Un documento Html se basa en una estructura jerárquica
-                de <strong>etiquetas</strong> que definen las diferentes partes
-                de una página. <br> <br>
-                Cada página Html sigue una estructura similar,
-                Comienza por <strong> !DOCTYPE </strong>,
-                seguido de las etiquetas html, head/body ...
-            </p>
+    <header>
+        <div class="icono">
+            <img src="bloc-de-dibujo.png" width="100%" alt="">
         </div>
-
-
-
-        <div class="der">
-            <p>
-                &lt; !doctype html> <br> <br>
-                &nbsp; &lt; html> <br>
-
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt; head>&lt; /head> <br>
-                <br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt; body>&lt; /body> <br>
-
-                &nbsp; &lt; /html> <br>
-            </p>
+        <div class="perfil">
+            <a href="https://www.instagram.com/samusk806/">Samuel Jiménez López</a>
         </div>
-    </div>
-
-    <h3 id="etiquetas">Etiquetas Básicas</h3>
-
-    <div class="contenido">
-        <div class="izq">
-            <h3>Title</h3>
-            <p>Define el título que aparece en la pestaña del navegador web</p>
-            <h3>Títulos (h1-h6)</h3>
-            <p>Se utiliza para definir títulos y subtítulos en la página</p>
-            <h3>Párrafo (p)</h3>
-            <p>Se utiliza para definir bloques de texto o párrafos.</p>
-            <h3>Intro (br)</h3>
-            <p>Fuerza el texto a comenzar en una nueva línea</p>
-            <h3>Espacios (& nbsp;)</h3>
-            <p>Inserta un espacio en blanco que no se separa entre líneas </p>
-
+        <div class="instagram">
+            <a href="https://www.instagram.com/samusk806/">
+                <img src="instagram.svg" alt="" width="100%">
+            </a>
         </div>
-
-
-
-        <div class="der">
-            &lt;!DOCTYPE html> <br>
-            &lt;html> <br>
-            <br>
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &lt;head> <br>
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &lt;title>Hellow world&lt;/title> <br>
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &lt;/head> <br>
-            <br>
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &lt;body> <br> <br>
-
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &lt;h1>Titol 1&lt;/h1> <br>
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &lt;h2>Titol 2&lt;/h2> <br>
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &lt;h3>Titol 3&lt;/h3> <br>
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &lt;h4>Titol 4&lt;/h4> <br>
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &lt;h5>Titol 5&lt;/h5> <br>
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &lt;h6>Titol 6&lt;/h6> <br> <br>
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &lt;p> Paràgraf amb informació.&lt;/p> <br>
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &lt;p>Dividir &lt;br> en dues línies.&lt;/p> <br>
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &lt;p>La frase "12& nbsp;homes".&lt;/p> <br> <br>
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &lt;/body> <br>
-            <br>
-            &lt;/html> <br>
+    </header>
+    <main>
+        <h1>Tema 1</h1>
+        <h2>HTML Básico</h2>
+            <!-- indice -->
+             <h3>Índice:</h3>
+            <ol>
+                <a href="#intro"><li> Introducción a HTML </li></a>
+                <a href="#estructura"><li>Estructura Basica </li></a>
+                <a href="#etiquetas"><li>Etiquetas basicas </li></a>
+                <a href="#anidamiento"><li>Elementos html y anidamiento </li></a>
+                <a href="#atributos"><li>Atributos </li></a>
+                <a href="#formatado"><li>Texto formatado </li></a>
+                <a href="#comentarios"><li>Comentarios </li></a>
+                <a href="#imagenes"><li>Imagenes </li></a>
+                <a href="#enlaces"><li>Enlaces </li></a>
+                <a href="#listas"><li>Listas </li></a>
+                <a href="#tablas"><li>Tablas </li></a>
+            </ol>
+        <h3 id="intro">¿Qué es HTML?</h3>
+        <p>
+            <strong>Html</strong> (HyperText Markup Language) es el lenguaje de marcas
+            para crear páginas web. Define la estructura de la página con etiquetas
+            que el navegador interpreta para mostrar contenido.
+        </p>
+        <h3>Breve Historia</h3>
+        <p>
+            Creat per Tim Berners-Lee el 1991. <br>
+            HTML 2.0 (1995): Primer estàndard oficial. <br>
+            HTML5 (2014): Última versió amb noves
+            funcionalitats com suport per a vídeo, àudio i gràfics.
+        </p>
+    
+        <h3 id="estructura">Estructura básica de un documento HTML</h3>
+        <div class="contenido">
+            <div class="izq">
+                <p>
+                    Un documento Html se basa en una estructura jerárquica
+                    de <strong>etiquetas</strong> que definen las diferentes partes
+                    de una página. <br> <br>
+                    Cada página Html sigue una estructura similar,
+                    Comienza por <strong> !DOCTYPE </strong>,
+                    seguido de las etiquetas html, head/body ...
+                </p>
+            </div>
+    
+    
+    
+            <div class="der">
+                <p>
+                    &lt; !doctype html> <br> <br>
+                    &nbsp; &lt; html> <br>
+    
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt; head>&lt; /head> <br>
+                    <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt; body>&lt; /body> <br>
+    
+                    &nbsp; &lt; /html> <br>
+                </p>
+            </div>
         </div>
-    </div>
-    <h3>Resultado:</h3>
-    <img src="etbasicas.png" alt="prueba" width="100%">
-
-    <h3>Anidamiento</h3>
-    <h4>Diferencias entre etiquetas y elementos</h4>
-    <div class="contenido">
-
-        <div class="izq">
-            <h3>Etiquetas (tag):</h3>
-            <p>
-                Es la parte que define el inicio y el final de un componente Html
-                Se delimita con los símbolos &lt;>
-            </p>
-        </div>
-
-
-
-        <div class="izq">
-            <h3>Elementos</h3>
-            <p>
-                Un elemento incluye una etiqueta de abertura, el contenido
-                y la etiqueta de cierre. <br>
-                Los elementos pueden estar vacios o tener otros elementos dentro.
-            </p>
-        </div>
-    </div>
-
-    <h3 id="anidamiento">Elementos anidados</h3>
-
-    <div class="contenido">
-        <div class="izq">
-            <p>
-                El<strong> anidamiento </strong>se refiere a colocar un elemento
-                HTML dentro de otro.
-            </p>
-            <p>
-                Es importante seguir correctamente el orden de las etiquetas:
-                La primera que se abre es la ultima que se cierra.
-            </p>
-        </div>
-
-
-
-        <div class="der">
-            <p>
-                &lt; !doctype html> <br> <br>
-                &nbsp; &lt; html> <br>
-
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &lt;head> <br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &lt;title>&lt;/title><br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &lt;/head> <br>
-                <br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &lt;body> <br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &lt;div> <br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &lt;p>&lt;/p> <br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &lt;/div><br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &lt;/body> <br>
-
-                &nbsp; &lt; /html> <br>
-            </p>
-        </div>
-    </div>
-
-    <h3 id="atributos">Atributos HTML</h3>
-    <div class="contenido">
-        <div class="izq">
-            <p>
-                Los atributos HTML son elementos que añaden información extra a las
-                etiquetas HTML para modificar el valor o la apariencia. Estos atributos
-                se colocan dentro de la etiqueta de abertura y diguen el formato
-                <strong>nombre="valor"</strong>
-            </p>
-        </div>
-
-
-
-        <div class="der">
-            <p>
+    
+        <h3 id="etiquetas">Etiquetas Básicas</h3>
+    
+        <div class="contenido">
+            <div class="izq">
+                <h3>Title</h3>
+                <p>Define el título que aparece en la pestaña del navegador web</p>
+                <h3>Títulos (h1-h6)</h3>
+                <p>Se utiliza para definir títulos y subtítulos en la página</p>
+                <h3>Párrafo (p)</h3>
+                <p>Se utiliza para definir bloques de texto o párrafos.</p>
+                <h3>Intro (br)</h3>
+                <p>Fuerza el texto a comenzar en una nueva línea</p>
+                <h3>Espacios (& nbsp;)</h3>
+                <p>Inserta un espacio en blanco que no se separa entre líneas </p>
+    
+            </div>
+    
+    
+    
+            <div class="der">
                 &lt;!DOCTYPE html> <br>
                 &lt;html> <br>
+                <br>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 &lt;head> <br>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -250,413 +120,551 @@
                 &lt;title>Hellow world&lt;/title> <br>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 &lt;/head> <br>
+                <br>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &lt;body> <br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &lt;h1 id="titol">Titol 1&lt;/h1> <br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &lt;h2 class="important">Titol 2&lt;/h2> <br>
+                &lt;body> <br> <br>
+    
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &lt;h3 style="color: blue; text-align: center;">Titol 3&lt;/h3> <br>
+                &lt;h1>Titol 1&lt;/h1> <br>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &lt;h4 title="Informació addicional">Titol 4&lt;/h4> <br>
+                &lt;h2>Titol 2&lt;/h2> <br>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &lt;img src="" alt="Descripción"> <br>
+                &lt;h3>Titol 3&lt;/h3> <br>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &lt;a href="https://www.exemple.com">Enllaç&lt;/a> <br>
+                &lt;h4>Titol 4&lt;/h4> <br>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &lt;p>Aquest és un paràgraf amb informació.&lt;/p> <br>
+                &lt;h5>Titol 5&lt;/h5> <br>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &lt;p>Aquest text es dividirà&lt;br>en dues línies.&lt;/p> <br>
+                &lt;h6>Titol 6&lt;/h6> <br> <br>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &lt;p>Aquesta és la frase "12& nbsp;homes".&lt;/p> <br>
+                &lt;p> Paràgraf amb informació.&lt;/p> <br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &lt;p>Dividir &lt;br> en dues línies.&lt;/p> <br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &lt;p>La frase "12& nbsp;homes".&lt;/p> <br> <br>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 &lt;/body> <br>
-
+                <br>
                 &lt;/html> <br>
-            </p>
+            </div>
         </div>
-    </div>
-    <h3>Resultado:</h3>
-
-
-    <h1 id="titol">Titol 1</h1>
-    <h2 class="important">Titol 2</h2>
-    <h3 style="color: blue; text-align: center;">Titol 3</h3>
-    <h4 title="Informació addicional">Titol 4</h4>
-    <img src="https://picsum.photos/200" alt="Descripció de la imatge">
-    <a href="index.html">Enllaç</a>
-    <p>Aquest és un paràgraf amb informació.</p>
-    <p>Aquest text es dividirà<br>en dues línies.</p>
-    <p>Aquesta és la frase "12&nbsp;homes".</p>
-
-    <h3 id="formatado">Texto Formatado HTML</h3>
-
-    <div class="contenido">
-        <div class="izq">
-            
-            <h4>Negrita</h4>
-            <p>
-                <b>b:</b> Aplica negrita sin significado semantico <br>
-                <b>Strong:</b> Aplica negrita con significado semantico
-            </p>
-            <h4>Cursiva</h4>
-            <p>
-                <b>i:</b> Aplica cursiva sin significado semantico <br>
-                <b>em:</b> Aplica cursiva con significado semantico
-            </p>
-            <h4>Subrallado</h4>
-            <p>
-                <b>u:</b> Subrallar texto
-            </p>
-            <h4>Texto rallado</h4>
-            <p>
-                <b>strike o s: para texto borrado o no relevante</b>
-            </p>
-            <h4>Superíndex</h4>
-            <p>
-                <b>Sub:</b> Eleva el texto como exponente
-            </p>
-            <h4>Subindex</h4>
-            <p>
-                <b>Sub:</b> Se utiliza en formulas químicas
-            </p>
-        </div>
-
-
-
-        <div class="izq">
-            <img src="codigo1.png" alt="codigo" width="100%">
-        </div>
-    </div>
-    <h3>Resultado:</h3>
-    <p>Aquest és un <b>text en negreta</b>.</p>
-    <p>Aquest és un <strong>text important</strong>.</p>
-    <p>Aquest és un <i>text en cursiva</i>.</p>
-    <p>Aquest és un <em>text emfatitzat</em>.</p>
-    <p>Aquest és un <u>text subratllat</u>.</p>
-    <p>Aquest és un <s>text ratllat</s>.</p>
-    <p>El quadrat de x és x<sup>2</sup>.</p>
-    <p>La fórmula de l'aigua és H<sub>2</sub>O.</p>
-    <p>Aquest és un text amb <strong>negreta</strong>,
-        <em>cursiva</em> i <u>subratllat</u>.
-    </p>
-    <p>La fórmula és H<sub>2</sub>O i l'exponent és 2
-        <sup>3</sup>.
-    </p> <br>
-    <h3 id="comentarios">Comentarios HTML</h3> 
-    <div class="contenido">
-        <div class="izq">
-
-            <ul>
-                <li>
-                    Los <b>comentarios</b> enn html son lineas de texto
-                    que se añaden al codigo para dejar notas o explicaciones,
-                    pero no son visibles para los usuarios den la página web.
-                </li>
-                <li>
-                    Se utilizan para ayudar a los desarrolladores a <b>documentar
-                        el codigo</b>, describir secciones o dejar indicaciones.
-                </li>
-                <li>
-                    Los comentarios <b>no afectan el rendimiento ni visualización.</b>
-                </li>
-            </ul>
-        </div>
-
-
-
-        <div class="izq">
-            <img src="codigo2.png" alt="codigo" width="100%">
-            <div class="warning">
-                <h3>Atención</h3>
+        <h3>Resultado:</h3>
+        <img src="etbasicas.png" alt="prueba" width="100%">
+    
+        <h3>Anidamiento</h3>
+        <h4>Diferencias entre etiquetas y elementos</h4>
+        <div class="contenido">
+    
+            <div class="izq">
+                <h3>Etiquetas (tag):</h3>
                 <p>
-                    <h4>Bones Pràctiques amb Comentaris: </h4>
-                    <ul>
-                       <li> Mantenir-los clars i concisos: Els comentaris han de
-                        ser breus i proporcionar informació útil.</li>
-                        <li>Evitar comentaris excessius: Només afegeix
-                            comentaris on sigui necessari per evitar sobrecarregar
-                            el codi.</li>
-                        <li>No deixar comentaris innecessaris en producció: Els
-                            comentaris en entorns de desenvolupament poden ser
-                            útils, però en codi de producció és millor deixar només
-                            els essencials.</li> <br>
-                    </ul>
+                    Es la parte que define el inicio y el final de un componente Html
+                    Se delimita con los símbolos &lt;>
+                </p>
+            </div>
+    
+    
+    
+            <div class="izq">
+                <h3>Elementos</h3>
+                <p>
+                    Un elemento incluye una etiqueta de abertura, el contenido
+                    y la etiqueta de cierre. <br>
+                    Los elementos pueden estar vacios o tener otros elementos dentro.
                 </p>
             </div>
         </div>
-    </div>
-    <h3 id="imagenes"> Imagenes</h3>
-    <div class="contenido">
-        <div class="izq">
-            <h3>Introducir Imagenes</h3>
-            <ul>
-                <li>L'etiqueta &lt;img> s'utilitza per inserir imatges en una pàgina web.</li>
-                <li>No té etiqueta de tancament, ja que és un element auto-tancat.</li>
-                <li>És essencial proporcionar informació sobre la imatge perquè es mostri
-                     correctament i per millorar l'accessibilitat.</li>
-            </ul>
-            <h4>Atributos:</h4>
-            <ol type="1">
-                <li>src (source)</li>
-                <ul>
-                    <li>Defineix la font o el camí de la imatge.</li>
-                    <li>Pot ser un camí relatiu o una URL completa.</li>
-                </ul>
-                <li>alt (alternate text)</li>
-                <ul>
-                    <li>Proporciona un text alternatiu que es mostra
-                        si la imatge no es carrega o és llegida per
-                        lectors de pantalla.</li>
-                    <li>És fonamental per a la accessibilitat i SEO.</li>
-                </ul>
-                <li>width i height</li>
-                <ul>
-                    <li>Especifica l'amplada (width) i l'alçada
-                        (height) de la imatge en píxels o percentatges.</li>
-                    <li>És important per controlar la mida de la
-                        imatge a la pàgina.</li>
-                </ul>
-            </ol>
-        </div>
-
-        
-
-        <div class="izq">
-            <img src="codigo3.png" alt="codigo" width="100%">
-            <div class="warning">
-                <h3>Atención</h3>
+    
+        <h3 id="anidamiento">Elementos anidados</h3>
+    
+        <div class="contenido">
+            <div class="izq">
                 <p>
-                    <h4>Bones Pràctiques: </h4>
-                    <ul>
-                       <li> Sempre utilitza el atribut alt per garantir una bona
-                        accessibilitat i SEO.</li>
-                        <li>Evita inserir imatges molt grans sense reduir la seva
-                            mida, ja que això pot afectar el rendiment de la pàgina.</li>
-                        <li>Si les imatges són responsives (se adapten a diferents
-                            dispositius), utilitza percentatges en lloc de píxels per
-                            width i height.</li> <br>
-                    </ul>
+                    El<strong> anidamiento </strong>se refiere a colocar un elemento
+                    HTML dentro de otro.
+                </p>
+                <p>
+                    Es importante seguir correctamente el orden de las etiquetas:
+                    La primera que se abre es la ultima que se cierra.
+                </p>
+            </div>
+    
+    
+    
+            <div class="der">
+                <p>
+                    &lt; !doctype html> <br> <br>
+                    &nbsp; &lt; html> <br>
+    
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &lt;head> <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &lt;title>&lt;/title><br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &lt;/head> <br>
+                    <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &lt;body> <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &lt;div> <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &lt;p>&lt;/p> <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &lt;/div><br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &lt;/body> <br>
+    
+                    &nbsp; &lt; /html> <br>
                 </p>
             </div>
         </div>
-    </div>
-
-    <h3 id="enlaces">Enlaces</h3>
-
-    <div class="contenido">
-        <div class="izq">
-            <h3>Introducir enlaces</h3>
-            <ul>
-                <li>L'etiqueta &lt;a> s'utilitza per crear enllaços (links) a altres pàgines web, documents, seccions dins de la mateixa
-                    pàgina o qualsevol altre recurs.</li>
-                <li>El element essencial per als enllaços és el atribut href que defineix la URL a la qual redirigeix el usuari.</li>
-                <li>El text entre la etiqueta d'obertura i la de tancament és el que els usuaris veuran i podran clicar per ser redirigits.</li>
-            </ul>
-            <h4>Atributos:</h4>
-            <ol type="1">
-                <li>href (hypertext reference):</li>
-                <ul>
-                    <li>Defineix la URL de destinació de l'enllaç.</li>
-                    <li>Pot ser un enllaç absolut (una URL completa)
-                        o relatiu (camí dins del mateix domini).</li>
-                </ul>
-                <li>target:</li>
-                <ul>
-                    <li>Defineix on s’obrirà l’enllaç: a la mateixa pestanya,
-                        en una nova pestanya o en un nou marc.</li>
-                    <li>Els valors més habituals són:</li>
-                    <ul>
-                        <li>_blank: Obre l'enllaç en una nova pestanya.</li>
-                        <li>_self: Obre l'enllaç a la mateixa pestanya
-                            (valor predeterminat).</li>
-                    </ul>
-                </ul>
-               
-            </ol>
-        </div>
-
-        
-
-        <div class="izq">
-            <img src="codigo4.png" alt="codigo" width="100%">
-            <div class="warning">
-                <h3>Atención</h3>
+    
+        <h3 id="atributos">Atributos HTML</h3>
+        <div class="contenido">
+            <div class="izq">
                 <p>
-                    <h4>Bones Pràctiques: </h4>
-                    <ul>
-                       <li> Utilitza enllaços descriptius en lloc de genèrics com
-                        "Clica aquí". Això millora l’accessibilitat i el SEO.</li>
-                        <li>Utilitza target="_blank" només quan sigui realment
-                            necessari, ja que obrir enllaços en noves pestanyes
-                            pot confondre alguns usuaris.</li>
-                        <li>Sempre assegura’t que els enllaços siguin
-                            accessibles afegint una descripció adequada per a
-                            usuaris amb lectors de pantalla.</li> <br>
-                    </ul>
+                    Los atributos HTML son elementos que añaden información extra a las
+                    etiquetas HTML para modificar el valor o la apariencia. Estos atributos
+                    se colocan dentro de la etiqueta de abertura y diguen el formato
+                    <strong>nombre="valor"</strong>
+                </p>
+            </div>
+    
+    
+    
+            <div class="der">
+                <p>
+                    &lt;!DOCTYPE html> <br>
+                    &lt;html> <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &lt;head> <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &lt;title>Hellow world&lt;/title> <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &lt;/head> <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &lt;body> <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &lt;h1 id="titol">Titol 1&lt;/h1> <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &lt;h2 class="important">Titol 2&lt;/h2> <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &lt;h3 style="color: blue; text-align: center;">Titol 3&lt;/h3> <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &lt;h4 title="Informació addicional">Titol 4&lt;/h4> <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &lt;img src="" alt="Descripción"> <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &lt;a href="https://www.exemple.com">Enllaç&lt;/a> <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &lt;p>Aquest és un paràgraf amb informació.&lt;/p> <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &lt;p>Aquest text es dividirà&lt;br>en dues línies.&lt;/p> <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &lt;p>Aquesta és la frase "12& nbsp;homes".&lt;/p> <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &lt;/body> <br>
+    
+                    &lt;/html> <br>
                 </p>
             </div>
         </div>
-    </div>
-
-    <h3 id="listas">Listas en HTML</h3>
-
-    <div class="contenido">
-        <div class="izq">
-            <h3>Llistes No Ordenades (&lt;ul>):</h3>
-            <ul>
-                <li> S'utilitzen per a llistes d’elements sense un ordre
-                    específic.</li>
-                <li>Els elements es mostren amb vinyetes o altres
-                        símbols abans de cada ítem.</li>
-                <li>Cada element de la llista es defineix amb l’etiqueta</li>
-                    &lt;li> (list item).
-            </ul>
-            <img src="codigo5.png" alt="codigo" width="100%">
+        <h3>Resultado:</h3>
+    
+    
+        <h1 id="titol">Titol 1</h1>
+        <h2 class="important">Titol 2</h2>
+        <h3 style="color: blue; text-align: center;">Titol 3</h3>
+        <h4 title="Informació addicional">Titol 4</h4>
+        <img src="https://picsum.photos/200" alt="Descripció de la imatge">
+        <a href="index.html">Enllaç</a>
+        <p>Aquest és un paràgraf amb informació.</p>
+        <p>Aquest text es dividirà<br>en dues línies.</p>
+        <p>Aquesta és la frase "12&nbsp;homes".</p>
+    
+        <h3 id="formatado">Texto Formatado HTML</h3>
+    
+        <div class="contenido">
+            <div class="izq">
+                
+                <h4>Negrita</h4>
+                <p>
+                    <b>b:</b> Aplica negrita sin significado semantico <br>
+                    <b>Strong:</b> Aplica negrita con significado semantico
+                </p>
+                <h4>Cursiva</h4>
+                <p>
+                    <b>i:</b> Aplica cursiva sin significado semantico <br>
+                    <b>em:</b> Aplica cursiva con significado semantico
+                </p>
+                <h4>Subrallado</h4>
+                <p>
+                    <b>u:</b> Subrallar texto
+                </p>
+                <h4>Texto rallado</h4>
+                <p>
+                    <b>strike o s: para texto borrado o no relevante</b>
+                </p>
+                <h4>Superíndex</h4>
+                <p>
+                    <b>Sub:</b> Eleva el texto como exponente
+                </p>
+                <h4>Subindex</h4>
+                <p>
+                    <b>Sub:</b> Se utiliza en formulas químicas
+                </p>
+            </div>
+    
+    
+    
+            <div class="izq">
+                <img src="codigo1.png" alt="codigo" width="100%">
+            </div>
         </div>
-
-        
-
-        <div class="izq">
-            <h3>Llistes Ordenades (&lt;ol>):</h3>
-            <ul>
-                <li> S’utilitzen per a llistes en què l'ordre dels
-                    elements és rellevant.</li>
-                <li>Els elements es numeren automàticament (1, 2,
-                    3, etc.).</li>
-                <li>Cada element de la llista es defineix amb l’etiqueta</li>
-                    &lt;li> (list item).
-            </ul>
-            <img src="codigo6.png" alt="codigo" width="100%">
-        </div>
-    </div>
-
-    <div class="contenido">
-        <div class="izq">
-            <h3>Atributos</h3>
-            <ol>
-                <li>Atribut type</li>
-                <ul>
-                    <li>Se utiliza para definir el tipo de numeración</li>
-                    <ul>
-                        <li>1</li>
-                        <li>A</li>
-                        <li>a</li>
-                        <li>I</li>
-                    </ul>
-                </ul>
-                <li>Atribut Start</li>
-                <ul>
-                    <li>Define el numero o letra para comenzar la numeración</li>
-                </ul>
-            </ol>
-            
-        </div>
-        
-        
-
-        <div class="izq">
-            <img src="codigo7.png" alt="codigo" width="100%">
-        </div>
-        
-    </div>
-
-    <div class="warning">
-        <h3>Atención</h3>
-        <p>
-            <h4>Bones Pràctiques: </h4>
-            <ul>
-               <li> Utilitza llistes no ordenades (&lt;ul>) quan l'ordre dels
-                ítems no sigui important.</li>
-                <li>Utilitza llistes ordenades (&lt;ol>) quan l'ordre sigui
-                    rellevant.</li>
-                <li>Personalitza les llistes segons les necessitats visuals o
-                    estilístiques utilitzant els atributs adequats.</li> <br>
-            </ul>
+        <h3>Resultado:</h3>
+        <p>Aquest és un <b>text en negreta</b>.</p>
+        <p>Aquest és un <strong>text important</strong>.</p>
+        <p>Aquest és un <i>text en cursiva</i>.</p>
+        <p>Aquest és un <em>text emfatitzat</em>.</p>
+        <p>Aquest és un <u>text subratllat</u>.</p>
+        <p>Aquest és un <s>text ratllat</s>.</p>
+        <p>El quadrat de x és x<sup>2</sup>.</p>
+        <p>La fórmula de l'aigua és H<sub>2</sub>O.</p>
+        <p>Aquest és un text amb <strong>negreta</strong>,
+            <em>cursiva</em> i <u>subratllat</u>.
         </p>
-    </div>
-
-    <h3 id="tablas">Tablas básicas HTML</h3>
-
-    <div class="contenido">
-        <div class="izq">
-            <h3>Etiqueta &lt;table>:</h3>
-                <p>
-                    L’etiqueta &lt;table> defineix la taula i
-                actua com el contenidor principal.
-                </p>
-            <h3>Etiqueta &lt;tr> (table row):</h3>
-               <p> Defineix una fila dins de la taula.</p>
-            <h3>Etiqueta &lt;td> (table data):</h3>
-                <p>
-                    Crea una cel·la dins d’una fila de la
-                taula (dades  de la taulla)
-                </p>
-                <h3>Etiqueta &lt;thead> (table head):</h3>
-                    <p>
-                        Defineix l’encapçalament de la taula, agrupant les
-                    files d'encapçalament (habitualment les que
-                    contenen &lt;th>).
-                    </p>
-                <h3>Etiqueta &lt;tbody> (table body):</h3>
-                    <p>
-                        Agrupa el cos de la taula, és a dir, les files de
-                    dades. Se sol fer servir per separar les dades dels
-                    encapçalaments.
-                    </p>
-                <h3>Etiqueta &lt;th> (table header):</h3>
-                    <p>
-                        S’utilitza per crear una cel·la d'encapçalament en
-                    una taula. El text dins de &lt;th> apareix en negreta i
-                    centrat per defecte.
-                    </p>
-                <h3>Atributs de Taula:</h3>
+        <p>La fórmula és H<sub>2</sub>O i l'exponent és 2
+            <sup>3</sup>.
+        </p> <br>
+        <h3 id="comentarios">Comentarios HTML</h3> 
+        <div class="contenido">
+            <div class="izq">
+    
                 <ul>
-                    <li>border: Afegeix una vora a la taula i a les cel·les</li>
-                
-                    <li>cellpadding:Defineix l’espai entre el contingut de la cel·la i
-                        la vora de la cel·la.</li>
-                
-                    <li>cellspacing:Controla l'espai entre les cel·les de la taula.</li>
-                
+                    <li>
+                        Los <b>comentarios</b> enn html son lineas de texto
+                        que se añaden al codigo para dejar notas o explicaciones,
+                        pero no son visibles para los usuarios den la página web.
+                    </li>
+                    <li>
+                        Se utilizan para ayudar a los desarrolladores a <b>documentar
+                            el codigo</b>, describir secciones o dejar indicaciones.
+                    </li>
+                    <li>
+                        Los comentarios <b>no afectan el rendimiento ni visualización.</b>
+                    </li>
                 </ul>
-        </div>
-
-        
-
-        <div class="izq">
-            <img src="codigo8.png" alt="codigo" width="100%"> 
-            <img src="codigo9.png" alt="codigo" width="100%">
-            <div class="warning">
-                <h3>Atención</h3>
-                <p>
-                    <h4>Bones Pràctiques: </h4>
-                    <ul>
-                       <li> Utilitza &lt;thead> i &lt;tbody> per organitzar les taules,
-                        especialment en taules més grans, per tal de separar clarament
-                        l’encapçalament del cos de la taula.</li>
-
-                        <li>Mantingues les taules simples per a dades tabulades i utilitza
-                            CSS per al disseny més avançat de les taules (colors, mida de la
-                            font, etc.).
-                        </li>                        
-                    </ul>
-                </p><br>
+            </div>
+    
+    
+    
+            <div class="izq">
+                <img src="codigo2.png" alt="codigo" width="100%">
+                <div class="warning">
+                    <h3>Atención</h3>
+                    <p>
+                        <h4>Bones Pràctiques amb Comentaris: </h4>
+                        <ul>
+                           <li> Mantenir-los clars i concisos: Els comentaris han de
+                            ser breus i proporcionar informació útil.</li>
+                            <li>Evitar comentaris excessius: Només afegeix
+                                comentaris on sigui necessari per evitar sobrecarregar
+                                el codi.</li>
+                            <li>No deixar comentaris innecessaris en producció: Els
+                                comentaris en entorns de desenvolupament poden ser
+                                útils, però en codi de producció és millor deixar només
+                                els essencials.</li> <br>
+                        </ul>
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-    <a href="index.html">Inicio</a>
-    <a href="tema2.html">Tema 2</a>
+        <h3 id="imagenes"> Imagenes</h3>
+        <div class="contenido">
+            <div class="izq">
+                <h3>Introducir Imagenes</h3>
+                <ul>
+                    <li>L'etiqueta &lt;img> s'utilitza per inserir imatges en una pàgina web.</li>
+                    <li>No té etiqueta de tancament, ja que és un element auto-tancat.</li>
+                    <li>És essencial proporcionar informació sobre la imatge perquè es mostri
+                         correctament i per millorar l'accessibilitat.</li>
+                </ul>
+                <h4>Atributos:</h4>
+                <ol type="1">
+                    <li>src (source)</li>
+                    <ul>
+                        <li>Defineix la font o el camí de la imatge.</li>
+                        <li>Pot ser un camí relatiu o una URL completa.</li>
+                    </ul>
+                    <li>alt (alternate text)</li>
+                    <ul>
+                        <li>Proporciona un text alternatiu que es mostra
+                            si la imatge no es carrega o és llegida per
+                            lectors de pantalla.</li>
+                        <li>És fonamental per a la accessibilitat i SEO.</li>
+                    </ul>
+                    <li>width i height</li>
+                    <ul>
+                        <li>Especifica l'amplada (width) i l'alçada
+                            (height) de la imatge en píxels o percentatges.</li>
+                        <li>És important per controlar la mida de la
+                            imatge a la pàgina.</li>
+                    </ul>
+                </ol>
+            </div>
+    
+            
+    
+            <div class="izq">
+                <img src="codigo3.png" alt="codigo" width="100%">
+                <div class="warning">
+                    <h3>Atención</h3>
+                    <p>
+                        <h4>Bones Pràctiques: </h4>
+                        <ul>
+                           <li> Sempre utilitza el atribut alt per garantir una bona
+                            accessibilitat i SEO.</li>
+                            <li>Evita inserir imatges molt grans sense reduir la seva
+                                mida, ja que això pot afectar el rendiment de la pàgina.</li>
+                            <li>Si les imatges són responsives (se adapten a diferents
+                                dispositius), utilitza percentatges en lloc de píxels per
+                                width i height.</li> <br>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <h3 id="enlaces">Enlaces</h3>
+    
+        <div class="contenido">
+            <div class="izq">
+                <h3>Introducir enlaces</h3>
+                <ul>
+                    <li>L'etiqueta &lt;a> s'utilitza per crear enllaços (links) a altres pàgines web, documents, seccions dins de la mateixa
+                        pàgina o qualsevol altre recurs.</li>
+                    <li>El element essencial per als enllaços és el atribut href que defineix la URL a la qual redirigeix el usuari.</li>
+                    <li>El text entre la etiqueta d'obertura i la de tancament és el que els usuaris veuran i podran clicar per ser redirigits.</li>
+                </ul>
+                <h4>Atributos:</h4>
+                <ol type="1">
+                    <li>href (hypertext reference):</li>
+                    <ul>
+                        <li>Defineix la URL de destinació de l'enllaç.</li>
+                        <li>Pot ser un enllaç absolut (una URL completa)
+                            o relatiu (camí dins del mateix domini).</li>
+                    </ul>
+                    <li>target:</li>
+                    <ul>
+                        <li>Defineix on s’obrirà l’enllaç: a la mateixa pestanya,
+                            en una nova pestanya o en un nou marc.</li>
+                        <li>Els valors més habituals són:</li>
+                        <ul>
+                            <li>_blank: Obre l'enllaç en una nova pestanya.</li>
+                            <li>_self: Obre l'enllaç a la mateixa pestanya
+                                (valor predeterminat).</li>
+                        </ul>
+                    </ul>
+                   
+                </ol>
+            </div>
+    
+            
+    
+            <div class="izq">
+                <img src="codigo4.png" alt="codigo" width="100%">
+                <div class="warning">
+                    <h3>Atención</h3>
+                    <p>
+                        <h4>Bones Pràctiques: </h4>
+                        <ul>
+                           <li> Utilitza enllaços descriptius en lloc de genèrics com
+                            "Clica aquí". Això millora l’accessibilitat i el SEO.</li>
+                            <li>Utilitza target="_blank" només quan sigui realment
+                                necessari, ja que obrir enllaços en noves pestanyes
+                                pot confondre alguns usuaris.</li>
+                            <li>Sempre assegura’t que els enllaços siguin
+                                accessibles afegint una descripció adequada per a
+                                usuaris amb lectors de pantalla.</li> <br>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <h3 id="listas">Listas en HTML</h3>
+    
+        <div class="contenido">
+            <div class="izq">
+                <h3>Llistes No Ordenades (&lt;ul>):</h3>
+                <ul>
+                    <li> S'utilitzen per a llistes d’elements sense un ordre
+                        específic.</li>
+                    <li>Els elements es mostren amb vinyetes o altres
+                            símbols abans de cada ítem.</li>
+                    <li>Cada element de la llista es defineix amb l’etiqueta</li>
+                        &lt;li> (list item).
+                </ul>
+                <img src="codigo5.png" alt="codigo" width="100%">
+            </div>
+    
+            
+    
+            <div class="izq">
+                <h3>Llistes Ordenades (&lt;ol>):</h3>
+                <ul>
+                    <li> S’utilitzen per a llistes en què l'ordre dels
+                        elements és rellevant.</li>
+                    <li>Els elements es numeren automàticament (1, 2,
+                        3, etc.).</li>
+                    <li>Cada element de la llista es defineix amb l’etiqueta</li>
+                        &lt;li> (list item).
+                </ul>
+                <img src="codigo6.png" alt="codigo" width="100%">
+            </div>
+        </div>
+    
+        <div class="contenido">
+            <div class="izq">
+                <h3>Atributos</h3>
+                <ol>
+                    <li>Atribut type</li>
+                    <ul>
+                        <li>Se utiliza para definir el tipo de numeración</li>
+                        <ul>
+                            <li>1</li>
+                            <li>A</li>
+                            <li>a</li>
+                            <li>I</li>
+                        </ul>
+                    </ul>
+                    <li>Atribut Start</li>
+                    <ul>
+                        <li>Define el numero o letra para comenzar la numeración</li>
+                    </ul>
+                </ol>
+                
+            </div>
+            
+            
+    
+            <div class="izq">
+                <img src="codigo7.png" alt="codigo" width="100%">
+            </div>
+            
+        </div>
+    
+        <div class="warning">
+            <h3>Atención</h3>
+            <p>
+                <h4>Bones Pràctiques: </h4>
+                <ul>
+                   <li> Utilitza llistes no ordenades (&lt;ul>) quan l'ordre dels
+                    ítems no sigui important.</li>
+                    <li>Utilitza llistes ordenades (&lt;ol>) quan l'ordre sigui
+                        rellevant.</li>
+                    <li>Personalitza les llistes segons les necessitats visuals o
+                        estilístiques utilitzant els atributs adequats.</li> <br>
+                </ul>
+            </p>
+        </div>
+    
+        <h3 id="tablas">Tablas básicas HTML</h3>
+    
+        <div class="contenido">
+            <div class="izq">
+                <h3>Etiqueta &lt;table>:</h3>
+                    <p>
+                        L’etiqueta &lt;table> defineix la taula i
+                    actua com el contenidor principal.
+                    </p>
+                <h3>Etiqueta &lt;tr> (table row):</h3>
+                   <p> Defineix una fila dins de la taula.</p>
+                <h3>Etiqueta &lt;td> (table data):</h3>
+                    <p>
+                        Crea una cel·la dins d’una fila de la
+                    taula (dades  de la taulla)
+                    </p>
+                    <h3>Etiqueta &lt;thead> (table head):</h3>
+                        <p>
+                            Defineix l’encapçalament de la taula, agrupant les
+                        files d'encapçalament (habitualment les que
+                        contenen &lt;th>).
+                        </p>
+                    <h3>Etiqueta &lt;tbody> (table body):</h3>
+                        <p>
+                            Agrupa el cos de la taula, és a dir, les files de
+                        dades. Se sol fer servir per separar les dades dels
+                        encapçalaments.
+                        </p>
+                    <h3>Etiqueta &lt;th> (table header):</h3>
+                        <p>
+                            S’utilitza per crear una cel·la d'encapçalament en
+                        una taula. El text dins de &lt;th> apareix en negreta i
+                        centrat per defecte.
+                        </p>
+                    <h3>Atributs de Taula:</h3>
+                    <ul>
+                        <li>border: Afegeix una vora a la taula i a les cel·les</li>
+                    
+                        <li>cellpadding:Defineix l’espai entre el contingut de la cel·la i
+                            la vora de la cel·la.</li>
+                    
+                        <li>cellspacing:Controla l'espai entre les cel·les de la taula.</li>
+                    
+                    </ul>
+            </div>
+    
+            
+    
+            <div class="izq">
+                <img src="codigo8.png" alt="codigo" width="100%"> 
+                <img src="codigo9.png" alt="codigo" width="100%">
+                <div class="warning">
+                    <h3>Atención</h3>
+                    <p>
+                        <h4>Bones Pràctiques: </h4>
+                        <ul>
+                           <li> Utilitza &lt;thead> i &lt;tbody> per organitzar les taules,
+                            especialment en taules més grans, per tal de separar clarament
+                            l’encapçalament del cos de la taula.</li>
+    
+                            <li>Mantingues les taules simples per a dades tabulades i utilitza
+                                CSS per al disseny més avançat de les taules (colors, mida de la
+                                font, etc.).
+                            </li>                        
+                        </ul>
+                    </p><br>
+                </div>
+            </div>
+        </div>
+        <a href="index.html">Inicio</a>
+        <a href="tema2.html">Tema 2</a>
+    </main>
 </body>
 
 </html>

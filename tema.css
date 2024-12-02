@@ -1,8 +1,36 @@
+:root {
+    --color-primario: rgb(238, 147, 111);
+}
+
 body {
 
     background-color: whitesmoke;
+    margin: 0%;
+}
+
+main {
     margin: 10%;
 }
+
+header{
+    width: 100%;
+    background-color: var(--color-primario);
+    display: flex;
+    justify-content: space-between;
+} 
+
+.icono {
+    width: 5%;
+    margin:1%;
+    
+}
+.perfil {
+    margin: 3%;
+}
+.instagram {
+    display: none;
+}
+
 
 .contenido {
     width: 100%;
@@ -37,7 +65,19 @@ body {
 h1 {
     text-align: center;
 }
-
+@media screen and (max-width: 940px) {
+    .temario {
+        grid-template-columns:  2fr;
+    }
+    .perfil {
+        display: none;
+    }
+    .instagram {
+        display: inline;
+        width: 5%;
+        margin: 1%;
+        
+    }
 
 /* hr {
     border: none;

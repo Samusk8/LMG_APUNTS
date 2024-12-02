@@ -19,10 +19,13 @@ header{
     margin:1%;
     
 }
-.buscador {
-    width: 20%;
+.perfil {
     margin: 3%;
 }
+.instagram {
+    display: none;
+}
+
 
 main {
     margin: 3% 10%;
@@ -75,5 +78,14 @@ a {
  @media screen and (max-width: 940px) {
     .temario {
         grid-template-columns:  2fr;
+    }
+    .perfil {
+        display: none;
+    }
+    .instagram {
+        display: inline;
+        width: 5%;
+        margin: 1%;
+        
     }
 } 
