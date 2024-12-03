@@ -1,5 +1,6 @@
 :root {
     --color-primario: rgb(238, 147, 111);
+    --color-boton: rgba(77, 14, 3, 0.829) ;
 }
 
 body {
@@ -19,6 +20,7 @@ header{
     margin:1%;
     
 }
+
 .perfil {
     margin: 3%;
 }
@@ -65,19 +67,27 @@ h2, h1 {
 }
 
 .boton:hover {
-    background-color: rgba(77, 14, 3, 0.829) ;
+    background-color: var(--color-boton);
 
 }
 
-a {
+.tema a{
     color: white;
     text-decoration: none;
 }
 
+a, a li {
+    text-decoration:none;
+    color: black;
+}
+
 /* Añadir media queris posteriormente, de momento no me sale responsive */
- @media screen and (max-width: 940px) {
+ @media screen and (max-width: 980px) {
     .temario {
         grid-template-columns:  2fr;
+    }
+    .icono {
+        width: 5%;
     }
     .perfil {
         display: none;

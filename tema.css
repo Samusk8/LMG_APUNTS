@@ -18,6 +18,10 @@ header{
     display: flex;
     justify-content: space-between;
 } 
+a {
+    text-decoration: none;
+    color: black;
+}
 
 .icono {
     width: 5%;
@@ -65,6 +69,55 @@ header{
 h1 {
     text-align: center;
 }
+.ejecutar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.resultado {
+    display: none;
+    width: 50%;
+    
+}
+.resultado img{
+    width: 100%;
+}
+input:checked~.resultado{
+    position:relative;
+    display: block;
+    width: 100%;
+}
+input:checked~.codigo {
+    display: none;
+}
+input [type=checkbox]{
+    display: block;
+}
+input {
+    display: none;
+} 
+label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    background-color: rgb(57, 233, 33);
+}
+input:checked ~ label {
+    background: green; 
+  }
+label:hover{
+    background: green;
+  }
+
+
+
 @media screen and (max-width: 940px) {
     .temario {
         grid-template-columns:  2fr;
