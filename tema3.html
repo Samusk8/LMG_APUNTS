@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Samuel Jiménez">
-    <meta name="keyword" content="html, lenguaje, marcas, ">
+    <meta name="keyword" content="html, lenguaje, marcas,css ">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Apuntes LMG">
     <meta property="og:image" content="cabeza.png">
@@ -17,59 +17,627 @@
 </head>
 
 <body>
-    <!-- Aprovecho la pagina del tema3 para explicar los conceptos añadidos -->
-    <h1>Tema 3</h1>
-    <h2>Conceptos añadidos (CSS y MediaQueries)</h2>
-    <div class="contenido">
-        <div class="izq">
-            <h3>Que es el css?</h3>
-            <p>
-                CSS (Cascading Style Sheets) és un llenguatge de fulles d’estil que s’utilitza per controlar la
-                presentació i el disseny dels documents web escrits en HTML. Mentre que HTML proporciona
-                l’estructura del contingut, CSS defineix com s’ha de visualitzar aquest contingut en termes de
-                disseny, colors, tipografia, espaiat i posicionament dels elements en una pàgina.
-            </p>
+    <header>
+        <div class="icono">
+            <a href="index.html"><img src="bloc-de-dibujo.png" width="100%" alt=""></a>
         </div>
-
-
-
-        <div class="izq">
-            <h3>Porque quiero profundizar en css?</h3>
-            <p>
-                He elegido añadir css a mi página ya que lo considero un elementos con mayor importancia
-                a la hora de diseñar una pagina web. Si solo estructuramos una pagina con etiquetas html
-                esta queda muy fea y poco atractiva para el cliente, por eso lo he añadido a mi página.
-            </p>
+        <div class="perfil">
+            <a href="https://www.instagram.com/samusk806/">Samuel Jiménez López</a>
         </div>
-    </div>
-    <div class="contenido">
-        <div class="izq">
-            <h3>Que son las media queries?</h3>
-            <p>
-                Una media query és una condició que s'afegeix al CSS
-                per aplicar regles d'estil només quan es compleixin
-                certes característiques del dispositiu o de la finestra
-                del navegador. L'exemple més comú és aplicar estils
-                diferents en funció de l'amplada de la pantalla.
-            </p>
+        <div class="instagram">
+            <a href="https://www.instagram.com/samusk806/">
+                <img src="instagram.svg" alt="" width="100%">
+            </a>
         </div>
+    </header>
+
+    <main>
+
+        <h1>Tema 3</h1>
+        <h2>CSS Básico</h2>
+        <h3>Índice</h3>
+        <ol>
+            <a href="#intro">
+                <li>CSS </li>
+            </a>
+            <a href="#estilos">
+                <li>Aplicación de estilos</li>
+            </a>
+            <a href="#sintaxiscss">
+                <li>Sintaxis basica</li>
+            </a>
+            <a href="#propiedadescss">
+                <li>Propiedades de texto</li>
+            </a>
+            <a href="#margenes">
+                <li>Margenes</li>
+            </a>
+            <a href="#">
+                <li>Color y fuentes</li>
+            </a>
+            <a href="#">
+                <li>Posicionamiento </li>
+            </a>
+            <a href="#">
+                <li>Flexbox</li>
+            </a>
+            <a href="#">
+                <li>MediaQueries</li>
+            </a>
+
+        </ol>
+        <h2 id="intro">Introducción</h2> <!-- Introduccion -->
+        <div class="contenido">
+            <div class="izq">
+                <h3>Que es el css?</h3>
+                <p>
+                    CSS (Cascading Style Sheets) és un llenguatge de fulles d’estil que s’utilitza per controlar la
+                    presentació i el disseny dels documents web escrits en HTML. Mentre que HTML proporciona
+                    l’estructura del contingut, CSS defineix com s’ha de visualitzar aquest contingut en termes de
+                    disseny, colors, tipografia, espaiat i posicionament dels elements en una pàgina.
+                </p>
+                <p>
+                    Importància del CSS en el desenvolupament web
+                    El CSS és una peça fonamental del desenvolupament web, ja que permet separar la presentació visual
+                    del contingut estructural
+                    d'una pàgina. Això ofereix una sèrie d'avantatges:
+                </p>
+            </div>
 
 
 
-        <div class="izq">
-            <h3>Porque quiero profundizar en MediaQueries ?</h3>
-            <p>
-                Aunque mi pagina todavía no sea Responsive, me gustaria poder aprender a dominar
-                estas condiciones para poder hacer en un futuro las paginas adaptadas a todo tipo 
-                de pantallas de todos los dispositivos.
-            </p>
+            <div class="izq">
+
+                <ol>
+                    <li>
+                        Disseny i estètica millorats: Amb CSS, pots aplicar estils atractius i professionals a les
+                        pàgines web, fent-les visualment
+                        atractives i més fàcils de llegir i navegar.
+                    </li>
+                    <li>
+                        Separació de contingut i estil: Gràcies al CSS, és possible mantenir els estils de presentació
+                        (com colors, mides de text,
+                        marges) fora del codi HTML, el que facilita el manteniment i l'actualització del disseny sense
+                        afectar l'estructura del contingut.
+                    </li>
+                    <li>
+                        Facilitat de manteniment: Amb un sol fitxer CSS, pots aplicar estils a múltiples pàgines web,
+                        estalviant temps i esforç quan es
+                        fan canvis de disseny. Això permet una actualització i un manteniment molt més eficient.
+                    </li>
+                    <li>
+                        Millor experiència d'usuari: Amb el CSS es poden crear dissenys adaptables (responsive) que
+                        funcionen bé en diferents
+                        dispositius, com mòbils, tauletes i ordinadors de sobretaula. Aquest tipus de disseny millora
+                        significativament l’experiència de
+                        l’usuari.
+                    </li>
+                    <li>
+                        Rendiment i velocitat: Utilitzar fitxers CSS externs pot ajudar a carregar les pàgines web més
+                        ràpidament, ja que els
+                        navegadors poden emmagatzemar en memòria cau aquests fitxers i reutilitzar-los en diverses
+                        pàgines, estalviant ample de
+                        banda i temps de càrrega.
+                    </li>
+                </ol>
+            </div>
         </div>
-    </div>
+        <h2 id="estilos">Aplicación de estilos</h2> <!-- Estilos -->
+        <div class="contenido">
+            <div class="izq">
+                <h3>Inline styles</h3>
+                <p>
+                    Els estils en línia s'apliquen directament a un element HTML, utilitzant l'atribut style dins de la
+                    mateixa etiqueta de
+                    l'element. Aquest mètode és adequat per a aplicar estils a un sol element de manera ràpida, però no
+                    és recomanable
+                    per a pàgines grans, ja que dificulta la mantenibilitat.
+                </p>
+            </div>
+            <div class="der">
+                <p>
+                    &lt;p style="color: red; font-size: 20px;"><br>
+                    Aquest és un paràgraf amb estils en línia.<br>
+                    &lt;/p><br>
+                </p>
+            </div>
 
-    <br>
-    <a href="tema2.html">Tema 2</a>
-    <a href="index.html">Inicio</a>
-    <a href="tema4.html">Tema 4</a>
+        </div>
+        <div class="contenido">
+            <div class="izq">
+                <h3>Embedded styles</h3>
+                <p>
+                    Els estils incrustats es col·loquen dins de la secció
+
+                    &lt;head> d’un document HTML, dins d’una etiqueta &lt;style>
+                    . Aquests estils s'apliquen a tots els elements HTML de la pàgina actual.
+                </p>
+            </div>
+            <div class="der">
+                <hr>
+                &lt;style> <br>
+                p {<br>
+                color: blue;<br>
+                font-size: 18px;<br>
+                }<br>
+
+                h1 {<br>
+                text-align: center;<br>
+                }<br>
+                &lt;/style>
+            </div>
+        </div>
+        <div class="contenido">
+            <div class="izq">
+                <h3>External stylesheets</h3>
+                <p>
+                    Els estils externs s’emmagatzemen en un fitxer CSS separat, i s’enllacen al document HTML utilitzant
+                    l'etiqueta
+                    &lt;link>
+                    dins de la secció
+
+                    &lt;head>. Aquest és el mètode més recomanat per a la majoria de llocs webs, especialment si consten
+                    de múltiples pàgines.
+                </p>
+            </div>
+            <div class="der">
+                <hr>
+                <p>
+                    &lt;link rel="stylesheet" href="style.css">
+                </p>
+            </div>
+        </div>
+        <h2 id="sintaxiscss">Sintaxis CSS</h2> <!-- Sintaxis css -->
+        <div class="contenido">
+            <div class="izq">
+                <ol>
+                    <li>
+                        Regla CSS: és una instrucció que defineix com
+                        s'ha d'aplicar un estil a un o més elements HTML
+                        dins d'una pàgina web.
+                    </li>
+                    <li>
+                        Selector: Indica l'element HTML al qual
+                        s'aplicaran els estils.
+                    </li>
+                    <li>
+                        Propietat: Defineix la característica que vols
+                        modificar (com ara el color, la mida del text, el
+                        marge, etc.).
+                    </li>
+                    <li>
+                        Valor: Assigna un valor específic a la propietat
+                        (com ara "blau" per al color, "16px" per a la mida
+                        del text, etc.).
+                    </li>
+                    <li>
+                        Declaració CSS és una instrucció dins d'una regla
+                        CSS que defineix una característica específica d'estil
+                        per a un element HTML.
+                    </li>
+                </ol>
+            </div>
+
+
+
+            <div class="izq">
+                <img src="sintaxiscss.png" alt="" width="100%">
+            </div>
+        </div>
+        <div class="contenido">
+            <div class="izq">
+                <h3>Selectores CSS</h3>
+                <p>
+                    Els selectors són una part fonamental del CSS perquè defineixen quins elements HTML seran afectats
+                    per les regles
+                    d'estil. Hi ha diversos tipus de selectors, però els més comuns en l'aprenentatge bàsic són:
+                </p>
+            </div>
+
+        </div>
+        <div class="contenido">
+            <div class="izq">
+                <p>
+                <h4>1. Selector de tipus (Type Selector)</h4>
+                Aquest selector aplica estils a tots els elements HTML del mateix
+                tipus. Aquest codi aplicarà el color verd a tots els títols (&lt;h1>) de la
+                pàgina.
+                </p>
+            </div>
+
+
+
+            <div class="der">
+                <p>
+                    h1 {
+                    color: green;
+                    }
+                </p>
+            </div>
+        </div>
+        <div class="contenido">
+            <div class="izq">
+                <p>
+                <h4>2. Selector de classe (Class Selector)</h4>
+                Els selectors de classe permeten aplicar estils a elements HTML amb
+                una classe específica. S’utilitza un punt (.) per seleccionar una
+
+                classe. Qualsevol element HTML que tingui l'atribut class="mi-
+                classe" tindrà un fons groc.
+                </p>
+            </div>
+
+
+
+            <div class="der">
+                <hr>
+                <p>
+                    .mi-classe {
+                    background-color: yellow;
+                    } <br>
+                    &lt;p class="mi-classe">Aquest paràgraf tindrà un fons groc.&lt;/p>
+                </p>
+            </div>
+        </div>
+        <div class="contenido">
+            <div class="izq">
+                <p>
+                <h4>3. Selector d'id (ID Selector)</h4>
+                El selector d’id s’utilitza per aplicar estils a un únic element HTML
+                que tingui un identificador específic. Es fa servir el símbol de la
+                coixinera #. Aquest exemple centrarà el text de l’element que tingui
+                id="mi-id". És important recordar que un ID ha de ser únic a la
+                pàgina.
+                </p>
+            </div>
+
+
+
+            <div class="der">
+                <hr>
+                <p>
+                    #mi-id {
+                    text-align: center;
+                    }
+                </p>
+            </div>
+        </div>
+        <div class="contenido">
+            <div class="izq">
+                <p>
+                <h4>4. Selector universal</h4>
+                El selector universal (*) aplica estils a tots els elements d’una
+                pàgina. Aquest exemple elimina els marges i farcits de tots els
+                elements de la pàgina, cosa útil per establir un estil uniforme.
+                </p>
+            </div>
+
+
+
+            <div class="der">
+                <hr>
+                <p>
+                    * {
+                    margin: 0;
+                    padding: 0;
+                    }
+                </p>
+            </div>
+        </div>
+        <div class="contenido">
+            <div class="izq">
+                <h3>Conceptos importantes</h3>
+            </div>
+        </div>
+        <div class="contenido">
+            <div class="izq">
+                <h4>Herencia</h4>
+                <p>
+                    Els fills hereten els estils
+                    dels seus pares, així no cal
+                    que escriguis estils per a
+                    tot.
+                </p>
+            </div>
+            <div class="der">
+                <p>
+                    body {
+                    color: blue;
+                    } <br>
+                    h1{
+                    color:blue;
+                    }
+                </p>
+            </div>
+        </div>
+        <div class="contenido">
+            <div class="izq">
+                <h4>Especificado</h4>
+                <p>
+                    Quan hi ha conflictes d'estils, el
+                    navegador aplica només el de més
+                    especificitat.
+                </p>
+            </div>
+
+            <div class="der">
+                <hr>
+                <p>
+                    .parrafo {
+                    color: blue;
+                    } <br>
+                    .article .parrafo{
+                    color:red;
+                    }
+                </p>
+            </div>
+        </div>
+        <div class="contenido">
+            <div class="izq">
+                <h4>Cascada</h4>
+                <p>
+                    Tot estil sobreescriu un d'anterior.
+                    La C de CSS significa Cascada.
+                </p>
+            </div>
+
+            <div class="der">
+                <hr>
+                <p>
+                    .parrafo {
+                    color: blue;
+                    } <br>
+                    .parrafo{
+                    color:red;
+                    }
+                </p>
+            </div>
+        </div>
+        <h2 id="propiedadescss">Propiedades de texto</h2>
+        <div class="contenido">
+            <div class="izq">
+                <h4>Propietat font-family</h4>
+                <p>
+                    La propietat font-family defineix el tipus de lletra (tipografia) que s'utilitzarà per
+                    a un element de text. Pots especificar una o més fonts, i el navegador aplicarà la
+                    primera que estigui disponible al sistema de l'usuari.
+                </p>
+            </div>
+
+            <div class="der">
+                <p>
+                    p {
+                    font-family: "Arial", sans-serif;
+                    }
+                </p>
+            </div>
+        </div>
+        <div class="contenido">
+            <div class="izq">
+                <h4>Propietat font-size</h4>
+                <p>
+                    La propietat font-size controla la mida de la lletra. Els valors es poden definir en
+                    diverses unitats, com píxels (px), ems (em), punts (pt), o percentatges (%).
+                </p>
+            </div>
+
+            <div class="der">
+                <hr>
+                <p>
+                    h1 {
+                    font-size: 32px;
+                    }
+                    p {
+                    font-size: 14px;
+                    }
+                </p>
+            </div>
+        </div>
+        <div class="contenido">
+            <div class="izq">
+                <h4>Propietat color</h4>
+                <p>
+                    La propietat color defineix el color del text. Es poden utilitzar noms de colors
+                    predefinits, valors en hexadecimal, o el sistema de colors RGB o RGBA.
+                </p>
+            </div>
+
+            <div class="der">
+                <hr>
+                <p>
+                    p {
+                    color: red; /* Amb nom de color */
+                    } <br>
+                    h1 {
+                    color: #00FF00; /* Amb codi hexadecimal */
+                    } <br>
+                    span {
+                    color: rgb(0, 0, 255); /* Amb codi RGB */
+                    } <br>
+                </p>
+            </div>
+        </div>
+        <div class="contenido">
+            <div class="izq">
+                <h4>Propietat text-align</h4>
+                <p>
+                    La propietat text-align s'utilitza per controlar l'alineació del text dins d'un
+                    element. Els valors més comuns són left (esquerra), right (dreta), center
+                    (centrat) i justify (justificat).
+                </p>
+            </div>
+
+            <div class="der">
+                <hr>
+                <p>
+                    h1 {
+                    text-align: center;
+                    } <br>
+                    p {
+                    text-align: justify;
+                    }
+                </p>
+            </div>
+        </div>
+        <div class="contenido">
+            <div class="izq">
+                <h4>Propietat font-weight</h4>
+                La propietat font-weight controla el gruix de la lletra. <br> Els valors comuns són:
+                <br>normal: per defecte. <br>
+                bold: text en negreta. <br>
+                Números entre 100 i 900, on 400 és el valor per defecte i 700 representa
+                negreta.
+            </div>
+
+            <div class="der">
+                <hr>
+                <p>
+                    p {
+                    font-weight: bold;
+                    }
+                </p>
+            </div>
+        </div>
+        <div class="contenido">
+            <div class="izq">
+                <h4>Propietat font-style</h4>
+                <p>
+                    La propietat font-style controla l'estil de la font, com si el text serà normal o en
+                    cursiva. <br>
+                    Els valors més comuns són: <br>
+                    normal: Text normal. <br>
+                    italic: Text en cursiva. <br>
+                    oblique: Text inclinat. <br>
+                </p>
+            </div>
+
+            <div class="der">
+                <hr>
+                <p>
+                    span {
+                    font-style: italic;
+                    }
+                </p>
+            </div>
+        </div>
+        <h2 id="margenes">Margenes</h2><!-- Margenes -->
+        <div class="contenido">
+
+            <p>
+                Els marges (margin), els farcits (padding) i les vores (border) són part del model de caixa en
+                CSS, que descriu com
+                es disposen els elements en la pàgina. Aquestes propietats permeten ajustar l'espai exterior i
+                interior d'un element,
+                així com definir-ne els límits visuals amb una vora.
+            </p>
+
+        </div>
+        <div class="contenido">
+            <div class="izq">
+                <h4>Margenes (margin)</h4>
+                <p>
+                    La propietat margin controla l'espai exterior d'un element, és
+                    a dir, l'espai que hi ha entre un element i els altres elements
+                    que l’envolten. Els marges es poden definir de manera
+                    individual per a cadascun dels quatre costats de l'element
+                    (superior, dret, inferior, esquerre) o de manera global per a
+                    tots els costats alhora.
+                </p>
+            </div>
+            <div class="der">
+                <p>
+                    p {
+                    margin: 10px; /* Aplica un marge de 10 píxels a tots els costats */
+                    } <br>
+                    h1 {
+                    margin-top: 20px; /* Marge superior de 20 píxels */ <br>
+                    margin-bottom: 10px; /* Marge inferior de 10 píxels */ <br>
+                    margin-left: 10px; /* Marge esquerra de 10 píxels */ <br>
+                    margin-right: 10px; /* Marge dret de 10 píxels */ <br>
+                    }
+                </p>
+            </div>
+
+        </div>
+        <div class="contenido">
+            <div class="izq">
+                <h4>Farcits (padding)</h4>
+                <p>
+                    La propietat padding controla l'espai interior d'un element, és
+                    a dir, l'espai entre el contingut d'un element (com text o
+                    imatges) i les seves vores. Igual que amb els marges, els farcits
+                    es poden definir per a tots els costats o per a cadascun
+                    individualment.
+                </p>
+            </div>
+
+            <div class="der">
+                <hr>
+                <p>
+                    div {
+                    padding: 20px; /* Aplica un farcit de 20 píxels a tots els costats */
+                    } <br>
+                    h2 {
+                    padding-left: 15px; /* Aplica un farcit de 15 píxels al costat esquerre */
+                    }
+                </p>
+            </div>
+        </div>
+        <div class="contenido">
+            <div class="izq">
+                <h4>Vores (border)</h4>
+                <p>
+                    La propietat border s'utilitza per afegir una vora al voltant
+                    d'un element. Aquesta propietat té diversos subatributs:
+                <ol>
+                    <li>
+                        amplada de la vora (border-width): defineix el gruix de
+                        la vora.
+                    </li>
+                    <li>
+                        estil de la vora (border-style): pot ser solid (sòlid),
+                        dashed (ratllat), dotted (puntets), etc.
+                    </li>
+                    <li>
+                        color de la vora (border-color): especifica el color de la
+                        vora.
+                    </li>
+                </ol>
+                </p>
+            </div>
+
+            <div class="der">
+                <hr>
+                <p>
+                    div {
+                        border: 2px solid black; /* Vora de 2 píxels, sòlida i negra */
+                        } <br>
+                        p {
+                        border: 1px dashed blue; /* Vora d'1 píxel, ratllada i blava */
+                        }
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="navegacion"><a href="tema2.html">Tema 2</a></div>
+        <div class="navegacion"><a href="index.html">Inicio</a></div>
+        <div class="navegacion"><a href="tema4.html">Tema 4</a></div>
+    </footer>
 </body>
 
 </html>
+<!-- Estructura basica del documento -->
+<!--
+     <div class="contenido">
+        <div class="izq">
+
+        </div>
+
+        <div class="der">
+            <p>
+
+            </p>
+        </div>
+    </div>
+     -->
