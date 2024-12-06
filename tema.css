@@ -10,6 +10,7 @@ body {
 
 main {
     margin: 10%;
+    border-radius: 300px;
 }
 
 header{
@@ -24,6 +25,9 @@ header{
 a {
     text-decoration: none;
     color: black;
+}
+h2, h3 {
+    scroll-margin-top: 100px;
 }
 
 .icono {
@@ -49,6 +53,12 @@ a {
 .izq {
     background-color: white;
     width: 50%;
+    height: auto;
+    margin: 1%;
+}
+.izq1 {
+    background-color: white;
+    width: 100%;
     height: auto;
     margin: 1%;
 }

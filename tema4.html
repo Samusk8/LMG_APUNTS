@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,12 @@
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Apuntes LMG">
     <meta property="og:image" content="cabeza.png">
-    
+
 
     <title>Tema 4</title>
     <link rel="stylesheet" href="tema.css">
 </head>
+
 <body>
     <header>
         <div class="icono">
@@ -28,7 +30,7 @@
         </div>
     </header>
     <main>
-        <h1>Tema 3</h1>
+        <h1>Tema 4</h1>
         <h2>CSS Básico</h2>
         <h3>Índice</h3>
         <ol>
@@ -67,18 +69,182 @@
                 <li>Herramientas modernas</li>
             </a>
         </ol>
+        <h2 id="introcssa">Introducción CSS Avanzado</h2>
+        <div class="contenido">
+            <p>
+                A mesura que els projectes web es tornen més complexos, l’ús del CSS també ha d’evolucionar per oferir
+                solucions
+                més adaptatives, eficients i organitzades. El CSS avançat no només se centra en dissenyar una pàgina web
+                atractiva,
+                sinó també en assegurar-se que aquesta pàgina funcioni bé en diversos dispositius, sigui fàcil de
+                mantenir i
+                estigui
+                optimitzada per a un rendiment òptim.
+            </p>
+        </div>
+        <div class="contenido">
+            <p>
+                Importància del disseny adaptable i optimitzat
+                Un dels pilars del CSS avançat és el disseny responsive, que
+                permet que les pàgines web s'adaptin a diferents mides de
+                pantalla i dispositius. Aquesta tècnica és cada cop més important
+                a causa de l'augment de l'ús de dispositius mòbils. Per aconseguir
+                un disseny adaptatiu, el CSS avançat incorpora tècniques com:
+            </p>
+            <p>
+                Millors pràctiques d'organització del CSS
+                A mesura que els projectes es fan més grans, és essencial mantenir
+                una bona organització del codi CSS per evitar que es torni difícil de
+                gestionar i mantenir. A continuació, algunes millors pràctiques per a
+                l'organització del CSS en projectes avançats:
+            </p>
+        </div>
+        <div class="contenido">
+            <ol>
+                <li>Media Queries avançade</li>
+                <li>Unitats relatives i flexibles</li>
+                <li>Layouts responsius amb Flexbox i Grid</li>
+            </ol>
+            <ol>
+                <li>Modularització del CSS:</li>
+                <ol type="a">
+                    <li>Dividir el codi CSS en fitxers més petits i temàtics</li>
+                    <li>Arquitectura CSS escalable (SMACSS, BEM)</li>
+                </ol>
+                <li>Pre-processadors CSS:</li>
+                <ol type="a">
+                    <li>Sass o LESS</li>
+
+                </ol>
+                <li>Optimització del CSS:</li>
+                <ol type="a">
+                    <li>Minificació del CSS</li>
+                    <li>Carregament asíncron del CSS</li>
+                </ol>
+                <li>Utilització de frameworks CSS:</li>
+                <ol type="a">
+                    <li>Bootstrap</li>
+                    <li>Tailwind CSS</li>
+                </ol>
+            </ol>
+        </div>
 
         <div class="contenido">
             <div class="izq">
-    
+                <h3>Selectores avanzados</h3>
+                <p>
+                    Els selectors avançats en CSS permeten aplicar estils amb molta més precisió i flexibilitat,
+                    permetent seleccionar
+                    elements específics en funció de la seva posició, relació amb altres elements o atributs.
+                </p>
+                <h4>Selectors d'atribut</h4>
+                <p>
+                    Els selectors d'atribut permeten aplicar estils als elements HTML que contenen un determinat atribut
+                    o valor d'atribut. Són especialment útils per estilitzar
+                    elements de formularis o en casos en què utilitzis atributs personalitzats.
+                </p>
             </div>
-    
+
             <div class="der">
                 <p>
-    
+                    input[type="text"] { <br>
+                    border: 1px solid blue; <br>
+                    } <br>
+                </p>
+                <p>
+                    a[href*="example"] { <br>
+                    color: green; <br>
+                    } <br>
+                </p>
+                <p>
+                    img[src^="https"] { <br>
+                    border: 2px solid black; <br>
+                    } <br>
                 </p>
             </div>
         </div>
+        <div class="contenido">
+            <div class="izq">
+                <h4>Selectors combinats</h4>
+                <p>
+                    Els selectors combinats permeten seleccionar elements que tenen una relació específica amb altres
+                    elements dins del document. Els combinadors més
+                    comuns són:
+                <ol type="a">
+                    <li>Combinador de descendents</li>
+                    <li>Combinador de fills directes</li>
+                    <li>Combinador de germans adjacents</li>
+                    <li>Combinador de germans generals</li>
+                </ol>
+                </p>
+            </div>
+
+            <div class="der">
+                <hr>
+                <p>
+                    div p {
+                    color: red;
+                    }
+                </p>
+                <p>
+                    div > p {
+                    color: blue;
+                    }
+                </p>
+                <p>
+                    h1 + p {
+                    font-weight: bold;
+                    }
+                </p>
+                <p>
+                    h2 ~ p {
+                    color: gray;
+                    }
+                </p>
+            </div>
+        </div>
+        <div class="contenido">
+            <div class="izq">
+                <h4>3. Selectors pseudo-classe</h4>
+                <p>
+                    Les pseudo-classes són selectors que s'utilitzen per aplicar estils a un element en un estat o
+                    condició particular. Això permet canviar l'estil d'un element
+                    quan l'usuari hi interactua o quan l'element compleix certs criteris.
+                <ol>
+                    <li>:hover: Aplica estils quan l'usuari passa el ratolí per sobre de l'element.</li>
+                    <li>:nth-child(): Selecciona elements en funció de la seva posició entre els seus germans.</li>
+                    <li>:first-of-type: Selecciona el primer element del seu tipus dins del seu pare.</li>
+                    <li>:not(): Selecciona tots els elements excepte aquells que coincideixin amb el selector
+                        especificat.</li>
+                </ol>
+                </p>
+            </div>
+
+            <div class="der">
+                <hr>
+                <p>
+                    a:hover {
+                    color: red;
+                    }
+                </p>
+                <p>
+                    tr:nth-child(odd) {
+                    background-color: #f0f0f0;
+                    }
+                </p>
+                <p>
+                    p:first-of-type {
+                    font-weight: bold;
+                    }
+                </p>
+                <p>
+                    div:not(.important) {
+                    background-color: yellow;
+                    }
+                </p>
+            </div>
+        </div>
+
 
     </main>
     <footer>
@@ -93,6 +259,7 @@
         </div> -->
     </footer>
 </body>
+
 </html>
 <!-- Estructura basica del documento -->
 <!--
