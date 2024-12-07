@@ -29,7 +29,9 @@ a {
 h2, h3 {
     scroll-margin-top: 100px;
 }
-
+a:hover {
+    color: rgb(78, 78, 78);
+}
 .icono {
     width: 3em;
     margin:2%;
@@ -47,6 +49,7 @@ h2, h3 {
     width: 100%;
     background-color: white;
     display: flex;
+
     
 }
 
@@ -68,6 +71,9 @@ h2, h3 {
     color: rgba(0, 158, 221, 0.87);
     width: 50%;
     
+}
+.contenido >p  {
+    margin: 2%;
 }
 .der p {
     margin: 50px 0px 0px 20px;
@@ -109,7 +115,9 @@ input:checked~.codigo {
 input [type=checkbox]{
     display: block;
 }
-input {
+menu {
+    color: black;
+    background-color: black;
     display: none;
 } 
 nav label {
