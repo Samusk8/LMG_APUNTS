@@ -13,6 +13,7 @@
 
     <title>Tema 4</title>
     <link rel="stylesheet" href="tema.css">
+    <link rel="stylesheet" href="pruebas.css">
 </head>
 
 <body>
@@ -291,6 +292,7 @@
         </div>
         <div class="contenido">
             <div class="izq">
+
                 <h4>Tipografies web amb @font-face</h4>
                 <p>
                     La regla @font-face permet utilitzar fonts
@@ -309,9 +311,26 @@
                     <li> <a href="https://www.myfonts.com/es">myFonts</a> <br></li>
                 </ol>
                 </p>
+
+                <div class="ejecutar">
+                    <nav id="nav-burguer">
+                        <label for="menu" id="checkbox1">
+                            Ejecutar
+                        </label>
+                    </nav>
+                </div>
+
             </div>
 
             <div class="der">
+                <input type="checkbox" id="menu">
+                <div class="resultado">
+                    <div class="fuente">
+                        <p>
+                            Este texto tiene otra fuente
+                        </p>
+                    </div>
+                </div>
                 <p>
                     @font-face { <br>
                     font-family: "Open Sans"; <br>
@@ -322,6 +341,7 @@
                     font-family: "Open Sans", sans-serif; <br>
                     }
                 </p>
+
             </div>
         </div>
         <div class="contenido">
@@ -570,29 +590,50 @@
                     Dins d'una de les cel·les del Grid, s'utilitza Flexbox per
                     alinear els elements en una fila.
                 </p>
+
+                <div class="ejecutar">
+                    <nav id="nav-burguer">
+                        <label for="menu1" id="checkbox1">
+                            Ejecutar
+                        </label>
+                    </nav>
+                </div>
+
             </div>
 
             <div class="der">
                 <hr>
-                <p>
-                    .grid { <br>
-                    display: grid; <br>
-                    grid-template-columns: 1fr 2fr; <br>
-                    gap: 10px; <br>
-                    height: 300px; <br>
-                    } <br>
-                    .element { <br>
-                    background-color: lightblue; <br>
-                    padding: 10px; <br>
-                    } <br>
-                    .flex { <br>
-                    display: flex; <br>
-                    justify-content: space-around; <br>
-                    align-items: center; <br>
-                    background-color: lightgreen; <br>
-                    height: 100%; <br>
-                    }
-                </p>
+                <input type="checkbox" id="menu1">
+                <div class="resultado">
+                    <div class="grid">
+                        <div class="element">Element 1</div>
+                        <div class="flex">
+                            <div>Flex Element 1</div>
+                            <div>Flex Element 2</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="codigo">
+                    <p>
+                        .grid { <br>
+                        display: grid; <br>
+                        grid-template-columns: 1fr 2fr; <br>
+                        gap: 10px; <br>
+                        height: 300px; <br>
+                        } <br>
+                        .element { <br>
+                        background-color: lightblue; <br>
+                        padding: 10px; <br>
+                        } <br>
+                        .flex { <br>
+                        display: flex; <br>
+                        justify-content: space-around; <br>
+                        align-items: center; <br>
+                        background-color: lightgreen; <br>
+                        height: 100%; <br>
+                        }
+                    </p>
+                </div>
             </div>
         </div>
         <h2 id="popover">Popover API</h2> <!-- Popover -->
@@ -619,6 +660,13 @@
                     <li> "toggle": Alterna entre mostrar i ocultar el popover.</li>
                 </ol>
                 </p>
+                <button class="trigger" popovertarget="popoverContent">
+                    Mostra informació
+                    </button>
+                    <!-- Contingut del popover -->
+                    <div id="popoverContent" popover>
+                    <p>Aquest és un popover utilitzant la Popover API!</p>
+                    </div>
             </div>
 
             <div class="der">
@@ -883,6 +931,65 @@
                     &nbsp;&nbsp;&nbsp;} <br>
                     }
                 </p>
+            </div>
+        </div>
+        <div class="contenido">
+            <div class="izq">
+                <h4>Ejemplo</h4>
+                <ul>
+                    <li>
+                        El botó canvia de color de manera suau quan es
+                        passa el ratolí per sobre gràcies a la transició.
+                    </li>
+                    <li>
+                        El div es mou cap endavant i cap enrere de manera
+                        fluida gràcies a l'animació moure, que es repeteix
+                        indefinidament.
+                    </li>
+                </ul>
+                
+                <div class="ejecutar">
+                    <nav id="nav-burguer">
+                        <label for="menu2" id="checkbox1">
+                            Ejecutar
+                        </label>
+                    </nav>
+                </div>
+
+            </div>
+            <div class="der">
+                <hr>
+                <input type="checkbox" id="menu2">
+                <div class="resultado">
+                    <button>Canvia color</button>
+                    <div class="div"></div>
+                </div>
+                <div class="codigo">
+                    <p>
+                        button { <br>
+                        padding: 10px 20px; <br>
+                        background-color: lightblue; <br>
+                        border: none; <br>
+                        cursor: pointer; <br>
+                        transition: background-color 0.3s ease; <br>
+                        } <br>
+                        button:hover { <br>
+                        background-color: darkblue; <br>
+                        } <br>
+                        /* Animació clau */ <br>
+                        @keyframes moure { <br>
+                        0% { transform: translateX(0); } <br>
+                        50% { transform: translateX(100px); } <br>
+                        100% { transform: translateX(0); } <br>
+                        } <br>
+                        div { <br>
+                        width: 100px; <br>
+                        height: 100px; <br>
+                        background-color: coral; <br>
+                        animation: moure 2s ease-in-out infinite; <br>
+                        }
+                    </p>
+                </div>
             </div>
         </div>
 
