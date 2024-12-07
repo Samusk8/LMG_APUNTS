@@ -25,7 +25,7 @@ input:checked~.der {
 input [type=checkbox]{
     display: block;
 }
-menu, menu1, menu2 {
+menu, menu1, menu2, menu3, menu4 {
     display: none;
 } 
 nav label {
@@ -120,3 +120,12 @@ nav label:hover{
           ::backdrop {
                backdrop-filter: blur(3px);
           }
+          .h2 {
+            color: green;
+          }
+          .mi-classe { background-color: yellow; }
+          #mi-id { text-align: center; }
+          .fuentes {
+            font-style: italic;
+          }
+          .bold { font-weight: bold; }

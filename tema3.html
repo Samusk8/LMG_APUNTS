@@ -10,10 +10,11 @@
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Apuntes LMG">
     <meta property="og:image" content="cabeza.png">
-
+    
 
     <title>Tema 3</title>
     <link rel="stylesheet" href="tema.css">
+    <link rel="stylesheet" href="pruebas.css">
 </head>
 
 <body>
@@ -248,11 +249,24 @@
                 tipus. Aquest codi aplicarà el color verd a tots els títols (&lt;h1>) de la
                 pàgina.
                 </p>
+                
+                <div class="ejecutar">
+                    <nav id="nav-burguer">
+                        <label for="menu" id="checkbox1">
+                            Ejecutar
+                        </label>
+                    </nav>
+                </div>
+
             </div>
 
 
 
             <div class="der">
+                <input type="checkbox" id="menu">
+                <div class="resultado">
+                    <h2 class="h2">Texto en verde</h2>
+                </div>
                 <p>
                     h1 {
                     color: green;
@@ -270,12 +284,25 @@
                 classe. Qualsevol element HTML que tingui l'atribut class="mi-
                 classe" tindrà un fons groc.
                 </p>
+                                
+                <div class="ejecutar">
+                    <nav id="nav-burguer">
+                        <label for="menu1" id="checkbox1">
+                            Ejecutar
+                        </label>
+                    </nav>
+                </div>
+
             </div>
 
 
 
             <div class="der">
                 <hr>
+                <input type="checkbox" id="menu1">
+                <div class="resultado">
+                    <p class="mi-classe">paràgraf fons groc.</p>
+                </div>
                 <p>
                     .mi-classe {
                     background-color: yellow;
@@ -294,12 +321,25 @@
                 id="mi-id". És important recordar que un ID ha de ser únic a la
                 pàgina.
                 </p>
+                                                
+                <div class="ejecutar">
+                    <nav id="nav-burguer">
+                        <label for="menu2" id="checkbox1">
+                            Ejecutar
+                        </label>
+                    </nav>
+                </div>
+
             </div>
 
 
 
             <div class="der">
                 <hr>
+                <input type="checkbox" id="menu2">
+                <div class="resultado">
+                    <p id="mi-id">Texto centrado</p>
+                </div>
                 <p>
                     #mi-id {
                     text-align: center;
@@ -486,18 +526,41 @@
         </div>
         <div class="contenido">
             <div class="izq">
-                <h4>Propietat font-weight</h4>
-                La propietat font-weight controla el gruix de la lletra. <br> Els valors comuns són:
-                <br>normal: per defecte. <br>
-                bold: text en negreta. <br>
-                Números entre 100 i 900, on 400 és el valor per defecte i 700 representa
-                negreta.
+                <input type="checkbox" id="menu4">
+                <div class="codigo">
+                    <p>
+                        <h4>Propietat font-weight</h4>
+                        La propietat font-weight controla el gruix de la lletra. <br> Els valors comuns són:
+                        <br>normal: per defecte. <br>
+                        bold: text en negreta. <br>
+                        Números entre 100 i 900, on 400 és el valor per defecte i 700 representa
+                        negreta.
+                    </p>
+                </div>
+                <div class="resultado">
+                    <h4>Propietat font-weight</h4>
+                    <p class="bold">
+                        La propietat font-weight controla el gruix de la lletra. <br> Els valors comuns són:
+                        <br>normal: per defecte. <br>
+                        bold: text en negreta. <br>
+                        Números entre 100 i 900, on 400 és el valor per defecte i 700 representa
+                        negreta.
+                    </p>
+                </div>
+                <div class="ejecutar">
+                    <nav id="nav-burguer">
+                        <label for="menu4" id="checkbox1">
+                            Ejecutar
+                        </label>
+                    </nav>
+                </div>
+                
             </div>
 
             <div class="der">
                 <hr>
                 <p>
-                    p {
+                    .bold {
                     font-weight: bold;
                     }
                 </p>
@@ -505,21 +568,46 @@
         </div>
         <div class="contenido">
             <div class="izq">
+                <input type="checkbox" id="menu3">
                 <h4>Propietat font-style</h4>
-                <p>
-                    La propietat font-style controla l'estil de la font, com si el text serà normal o en
-                    cursiva. <br>
-                    Els valors més comuns són: <br>
-                    normal: Text normal. <br>
-                    italic: Text en cursiva. <br>
-                    oblique: Text inclinat. <br>
-                </p>
+                
+                <div class="codigo">
+                    <p>
+                        La propietat font-style controla l'estil de la font, com si el text serà normal o en
+                        cursiva. <br>
+                        Els valors més comuns són: <br>
+                        normal: Text normal. <br>
+                        italic: Text en cursiva. <br>
+                        oblique: Text inclinat. <br>
+                    </p>
+                </div>
+                                                                
+ 
+
+                <div class="resultado">
+                    <p class="fuentes">
+                        La propietat font-style controla l'estil de la font, com si el text serà normal o en
+                        cursiva. <br>
+                        Els valors més comuns són: <br>
+                        normal: Text normal. <br>
+                        italic: Text en cursiva. <br>
+                        oblique: Text inclinat. <br>
+                    </p>
+                </div>
+                <div class="ejecutar">
+                    <nav id="nav-burguer">
+                        <label for="menu3" id="checkbox1">
+                            Ejecutar
+                        </label>
+                    </nav>
+                </div>
+                
             </div>
 
             <div class="der">
                 <hr>
                 <p>
-                    span {
+                    .fuentes {
                     font-style: italic;
                     }
                 </p>
