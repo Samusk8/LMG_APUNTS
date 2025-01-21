@@ -47,6 +47,8 @@ h2, h1 {
 .tema {
     background-color: white;
     border-radius: 50px;
+    border-style: solid;
+    border-color: var(--color-primario);
 }
 .tema > h3, ol{
     margin-left: 50px;
@@ -86,16 +88,21 @@ a, a li {
     .temario {
         grid-template-columns:  2fr;
     }
-    .icono {
-        width: 5%;
-    }
+
     .perfil {
         display: none;
     }
+    .icono {
+        width: 2em;
+    }
     .instagram {
         display: inline;
-        width: 5%;
+        width: 2em;
         margin: 1%;
         
+    }
+    header {
+        height: 50px;
+        top: 0;
     }
 } 

@@ -1,0 +1,131 @@
+.ejecutar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.resultado {
+    display: none;
+    width: 50%;
+    
+}
+.resultado img{
+    width: 100%;
+}
+input:checked~.resultado{
+    position:relative;
+    display: block;
+    width: 100%;
+}
+input:checked~.codigo {
+    display: none;
+}
+input:checked~.der {
+    display: none;
+}
+input [type=checkbox]{
+    display: block;
+}
+menu, menu1, menu2, menu3, menu4 {
+    display: none;
+} 
+nav label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    background-color: rgb(57, 233, 33);
+}
+input:checked ~ nav label {
+    background: green; 
+  }
+nav label:hover{
+    background: green;
+  }
+
+
+  @font-face { 
+    font-family: "Open Sans"; 
+    src: url("fonts/OpenSans-Regular.woff2") format("woff2"), 
+    url("fonts/OpenSans-Regular.woff") format("woff"); 
+    } 
+    .fuente { 
+    font-family: "Open Sans", sans-serif; 
+    color: red;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 10px;
+        height: 300px;
+        }
+        .element {
+        background-color: lightblue;
+        padding: 10px;
+        }
+        .flex {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: lightgreen;
+        height: 100%;
+        }
+        
+        button {
+            padding: 10px 20px;
+            background-color: lightblue;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            }
+            button:hover {
+            background-color: darkblue;
+            }
+            /* Animació clau */
+            @keyframes moure {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(100px); }
+            100% { transform: translateX(0); }
+            }
+            .div {
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+            animation: moure 2s ease-in-out infinite;
+            }
+
+            .trigger {
+                padding: 10px 20px;
+                background-color: #3498db;
+                color: white;
+                border: none;
+                cursor: pointer;
+                border-radius: 4px;
+          }
+          /* Estils per al contingut del popover */
+          #popoverContent {
+               padding: 10px;
+               background-color: #333;
+               color: white;
+               border-radius: 5px;
+               width: 200px;
+               text-align: center;
+          }
+          /* Estils per al fons quan el popover està obert */
+          ::backdrop {
+               backdrop-filter: blur(3px);
+          }
+          .h2 {
+            color: green;
+          }
+          .mi-classe { background-color: yellow; }
+          #mi-id { text-align: center; }
+          .fuentes {
+            font-style: italic;
+          }
+          .bold { font-weight: bold; }
